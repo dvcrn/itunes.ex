@@ -23,6 +23,7 @@ Elixir wrapper for the [iTunes affiliate search API](https://affiliate.itunes.ap
 ## Usage
 
 ```
+iex(1)> Itunes.search_artists "Taylor", 1
 {:ok,
  [%Itunes.Artist{amgArtistId: 816977, artistId: 159260351,
    artistLinkUrl: "https://itunes.apple.com/us/artist/taylor-swift/id159260351?uo=4",
