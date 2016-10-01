@@ -23,16 +23,14 @@ Elixir wrapper for the [iTunes affiliate search API](https://affiliate.itunes.ap
 ## Usage
 
 ```
-iex(1)> Itunes.search_artists "Taylor", 1
 {:ok,
- [%Itunes.Album{amgArtistId: 816977, artistId: 159260351,
-   artistName: "Taylor Swift", artistViewUrl: nil, artworkUrl100: nil,
-   artworkUrl60: nil, collectionCensoredName: nil, collectionExplicitness: nil,
-   collectionId: nil, collectionName: nil, collectionPrice: nil,
-   collectionType: nil, collectionViewUrl: nil, copyright: nil, country: nil,
-   currency: nil, primaryGenreName: "Pop", releaseDate: nil, trackCount: nil,
-   wrapperType: "artist"}]}
+ [%Itunes.Artist{amgArtistId: 816977, artistId: 159260351,
+   artistLinkUrl: "https://itunes.apple.com/us/artist/taylor-swift/id159260351?uo=4",
+   artistName: "Taylor Swift", artistType: "Artist", primaryGenreId: 14,
+   primaryGenreName: "Pop", wrapperType: "artist"}]}
 ```
+
+Check out the [API Docs](https://hexdocs.pm/itunes/api-reference.html) for more examples on how to use this.
 
 ## Limitations
 - Currently only music-related APIs are implemented
